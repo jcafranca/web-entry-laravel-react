@@ -1,33 +1,3 @@
-import { LucideIcon } from 'lucide-react'
-import { Button, ButtonProps } from '@/Components/ui/button'
-import { cn } from '../../lib/utils'
-import { SheetClose } from '@/Components/ui/sheet'
-
-interface SideBarButtonProps extends ButtonProps {
-    icon?: LucideIcon;
-  }
-  export function SideBarButton({
-    icon: Icon,
-    className,
-    children,
-    ...props
-  }: SideBarButtonProps) {
-    return (
-      <Button
-        variant='ghost'
-        className={cn('gap-2 justify-start ', className)}
-        {...props}
-      >
-        {Icon && <Icon size={20} />}
-        <span>{children}</span>
-      </Button>
-    );
-  }
-  
-  export function SideBarButtonSheet(props: SideBarButtonProps) {
-    return (
-      <SheetClose asChild>
-        <SideBarButton {...props} />
-      </SheetClose>
-    );
-  }
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ed2e0ddfbc3bd1bbcb2c2d34d2e91415863ec4b89d26524c62862d223813346
+size 797

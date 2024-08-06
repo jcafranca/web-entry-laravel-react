@@ -1,18 +1,3 @@
-import { ButtonHTMLAttributes } from 'react';
-
-export default function SecondaryButton({ type = 'button', className = '', disabled, children, ...props }: ButtonHTMLAttributes<HTMLButtonElement>) {
-    return (
-        <button
-            {...props}
-            type={type}
-            className={
-                `inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150 ${
-                    disabled && 'opacity-25'
-                } ` + className
-            }
-            disabled={disabled}
-        >
-            {children}
-        </button>
-    );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b91555742ec24918d34d904ea16b4e28842fd5af4e3545dd1cb3f195d6e243b
+size 797

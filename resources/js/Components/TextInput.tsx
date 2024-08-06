@@ -1,30 +1,3 @@
-import { forwardRef, useEffect, useImperativeHandle, useRef, InputHTMLAttributes } from 'react';
-
-export default forwardRef(function TextInput(
-    { type = 'text', className = '', isFocused = false, ...props }: InputHTMLAttributes<HTMLInputElement> & { isFocused?: boolean },
-    ref
-) {
-    const localRef = useRef<HTMLInputElement>(null);
-
-    useImperativeHandle(ref, () => ({
-        focus: () => localRef.current?.focus(),
-    }));
-
-    useEffect(() => {
-        if (isFocused) {
-            localRef.current?.focus();
-        }
-    }, []);
-
-    return (
-        <input
-            {...props}
-            type={type}
-            className={
-                'border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm ' +
-                className
-            }
-            ref={localRef}
-        />
-    );
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:c499098937a400197dddbf9d62c40b44ebde801444c373a12fdb5d1af33fe07b
+size 840

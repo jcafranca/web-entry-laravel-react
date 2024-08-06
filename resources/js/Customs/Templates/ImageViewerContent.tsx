@@ -1,17 +1,3 @@
-import ReactPanZoom from '@/Customs/ImageViewer-Components';
-
-interface ImageViewerProps {
-    image_path?: string,
-    filename?: string
-}
-
-export function ImageViewerContent(props: ImageViewerProps) {
-    return (
-        <div className="relative overflow-clip w-fit h-fit">
-            <ReactPanZoom
-                alt={props.filename ?? ""}
-                image={props.image_path ?? ""}                
-            />
-        </div>
-    )
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:422e4c9c4437f08a2720a764f2e03ed67dfb5cc902f8554a306cd226ce112480
+size 446

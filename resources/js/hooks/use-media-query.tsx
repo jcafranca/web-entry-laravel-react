@@ -1,19 +1,3 @@
-import * as React from "react"
-
-export function useMediaQuery(query: string) {
-  const [value, setValue] = React.useState(false)
-
-  React.useEffect(() => {
-    function onChange(event: MediaQueryListEvent) {
-      setValue(event.matches)
-    }
-
-    const result = matchMedia(query)
-    result.addEventListener("change", onChange)
-    setValue(result.matches)
-
-    return () => result.removeEventListener("change", onChange)
-  }, [query])
-
-  return value
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b16fef9bebd06098d9390f9fc9a94e92e9c4a182a20a84f6d0db35dae8ca6b1
+size 455

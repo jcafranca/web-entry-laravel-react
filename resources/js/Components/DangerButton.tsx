@@ -1,17 +1,3 @@
-import { ButtonHTMLAttributes } from 'react';
-
-export default function DangerButton({ className = '', disabled, children, ...props }: ButtonHTMLAttributes<HTMLButtonElement>) {
-    return (
-        <button
-            {...props}
-            className={
-                `inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150 ${
-                    disabled && 'opacity-25'
-                } ` + className
-            }
-            disabled={disabled}
-        >
-            {children}
-        </button>
-    );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f43a6a5f4d308286dc5a4c14e9c413c64b53f8cb409df746041e4ed48c0486f3
+size 740

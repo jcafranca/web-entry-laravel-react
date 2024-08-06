@@ -1,14 +1,3 @@
-import { InputHTMLAttributes } from 'react';
-
-export default function Checkbox({ className = '', ...props }: InputHTMLAttributes<HTMLInputElement>) {
-    return (
-        <input
-            {...props}
-            type="checkbox"
-            className={
-                'rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500 ' +
-                className
-            }
-        />
-    );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:850f5c929e342aad5240a5b30e96c7680fb7994fd45faab639665d17c47c1e30
+size 406
