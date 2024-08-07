@@ -12,4 +12,15 @@ export const mainTableSchema = z.object({
   headremarks: z.string()
 })
 
+export const monitoringTableSchema = z.object({
+  id: z.string(),
+  date: z.string(),
+  reason: z.string(),
+  remarks: z.string(),
+  period: z.string(),
+  status: z.string(),
+  headremarks: z.string()
+})
+
 export type MainTableTask = z.infer<typeof mainTableSchema>
+export type MonitoringTableTask = z.infer<typeof monitoringTableSchema>

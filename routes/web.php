@@ -22,6 +22,10 @@ Route::get('/home', function () {
     return Inertia::render('Home');
 })->middleware(['auth', 'verified'])->name('home');
 
+Route::get('/monitoring', function () {
+    return Inertia::render('Monitoring');
+})->name('monitoring');
+
 Route::get('/settings', function () {
     return Inertia::render('Home');
 })->name('settings');
