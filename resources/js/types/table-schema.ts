@@ -23,13 +23,11 @@ export const monitoringTableSchema = z.object({
     id: z.string(),
     pronumber: z.string(),
     date: z.string(),
-    reason: z.string(),
     remarks: z.string(),
     start_time: z.string(),
     end_time: z.string(),
     elapsed_time: z.string(),
     status: z.string(),
-    headremarks: z.string(),
     user: userInfo,
 });
 
