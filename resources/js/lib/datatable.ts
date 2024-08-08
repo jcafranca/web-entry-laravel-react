@@ -6,6 +6,7 @@ import {
     BriefcaseMedicalIcon,
     CheckCheckIcon,
     CrossIcon,
+    FileX2Icon,
     HeartPulseIcon,
     HourglassIcon,
     Loader2Icon,
@@ -26,7 +27,7 @@ import {
     {
       value: "reject",
       label: "Reject",
-      icon: CrossIcon,
+      icon: FileX2Icon,
     },
     {
       value: "query",

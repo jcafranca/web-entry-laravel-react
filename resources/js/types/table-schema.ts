@@ -1,13 +1,12 @@
 
 import { z } from "zod";
 
-const userInfo = z.object({
+export const userInfo = z.object({
     id: z.string(),
     name: z.string(),
     username: z.string(),
     is_connected: z.string(),
 });
-
 
 export const mainTableSchema = z.object({
     id: z.string(),
@@ -26,7 +25,7 @@ export const monitoringTableSchema = z.object({
     remarks: z.string(),
     start_time: z.string(),
     end_time: z.string(),
-    elapsed_time: z.string(),
+    elasped_time: z.string(),
     status: z.string(),
     user: userInfo,
 });
