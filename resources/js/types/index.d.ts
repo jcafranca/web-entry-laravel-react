@@ -1,7 +1,9 @@
 export interface User {
     id: number;
     name: string;
+    username: string;
     email: string;
+    is_connected: boolean;
     email_verified_at: string;
 }
 

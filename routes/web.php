@@ -24,15 +24,15 @@ Route::get('/home', function () {
 
 Route::get('/monitoring', function () {
     return Inertia::render('Monitoring');
-})->name('monitoring');
+})->middleware(['auth', 'verified'])->name('monitoring');
 
 Route::get('/settings', function () {
-    return Inertia::render('Home');
-})->name('settings');
+    return Inertia::render('Settings');
+})->middleware(['auth', 'verified'])->name('settings');
 
 Route::get('/images', function () {
     return Inertia::render('images');
-})->name('images');
+})->middleware(['auth', 'verified'])->name('images');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
