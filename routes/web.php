@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
+    return Inertia::render('LandingPage', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -22,9 +22,17 @@ Route::get('/home', function () {
     return Inertia::render('Home');
 })->middleware(['auth', 'verified'])->name('home');
 
-Route::get('/monitoring', function () {
-    return Inertia::render('Monitoring');
-})->middleware(['auth', 'verified'])->name('monitoring');
+Route::get('/production', function () {
+    return Inertia::render('Production');
+})->middleware(['auth', 'verified'])->name('production');
+
+Route::get('/users', function () {
+    return Inertia::render('Users');
+})->middleware(['auth', 'verified'])->name('users');
+
+Route::get('/bph', function () {
+    return Inertia::render('Bph');
+})->middleware(['auth', 'verified'])->name('bph');
 
 Route::get('/settings', function () {
     return Inertia::render('Settings');

@@ -23,9 +23,9 @@ export const monitoringTableSchema = z.object({
     pronumber: z.string(),
     date: z.string(),
     remarks: z.string(),
-    start_time: z.string(),
-    end_time: z.string(),
-    elasped_time: z.string(),
+    starttime: z.string(),
+    endtime: z.string(),
+    elapsedtime: z.string(),
     status: z.string(),
     user: userInfo,
 });
