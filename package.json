@@ -64,7 +64,6 @@
         "react-zoom-pan-pinch": "^3.6.1",
         "recharts": "^2.12.7",
         "tailwind-merge": "^2.4.0",
-        "tailwind-scrollbar-hide": "^1.1.7",
         "tailwindcss-animate": "^1.0.7",
         "tesseract.js": "^5.1.0",
         "vaul": "^0.9.1",
